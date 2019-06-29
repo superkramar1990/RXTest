@@ -5,13 +5,13 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		whoami
+		echo 'Zalypka'
             }
         }
         stage('Test') {
             steps {
                 echo 'Testing..'
-		pwd
+		touch zalypa.txt
             }
         }
         stage('Deploy') {
