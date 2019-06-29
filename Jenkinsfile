@@ -11,7 +11,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing..'
-		touch zalypa.txt
+		sh 'touch zalypa.txt'
             }
         }
         stage('Deploy') {
